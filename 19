@@ -1,0 +1,10 @@
+def calculate_mean(data):
+    total = sum(data)
+    count = len(data)
+    mean = total / count
+    return mean
+
+input_data = input("Enter a list of numbers, separated by commas: ")
+data = [float(num) for num in input_data.split(",")]
+mean_value = calculate_mean(data)
+print("Mean:", mean_value)
